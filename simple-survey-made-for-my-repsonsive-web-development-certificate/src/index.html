@@ -1,0 +1,97 @@
+
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+ <!--Tests-->
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+<header>
+  <h1 id="title">Community Improvement Survey</h1>
+  <p id="description">
+    We need your help to improve our community.</p>  
+</header>
+  
+<body>                              
+  <form id="survey-form">
+  
+                               <!--Name-->
+      <div class="labels">
+        <label id="name-label" for="name">Full Name: </label>
+         <input type="text" name="name" id="name"  class="userdata" placeholder="Enter your full name" required>
+      </div>
+  
+                              <!--E-mail-->
+   <div class="labels">
+        <label id="email-label" for="email">E-mail: </label>
+        <input type="email" email="email" id="email"  class="userdata" placeholder="Enter your e-mail:" required>
+    </div>
+    
+                                <!--Age-->
+    <div class="labels">
+        <label id="number-label" for="Age">Age: </label>
+        <input type="number" Age="Age" id="number" class="userdata" min="5" max="95" placeholder="Enter your age between 5 and 95:" required>
+    </div>
+                                                                                                  <!--Dropdown List-->
+ 
+      <div class="labels">
+        <label for="societyRole">What is your role in your local society?</label>
+        <select id="dropdown" name="societyRole" class="userdata">
+      <option disabled value>Select an option</option>
+      <option value="Chef">Chef</option>
+      <option value="Student">Student</option>
+      <option value="Police Officer">Police Officer</option>
+      <option value="Fireman">Fireman</option>
+      <option value="Dog">Stray Dog</option>
+      <option value="Other">Other</option>
+    </select>
+      </div>
+
+                           
+                           <!--Radio Buttons-->
+
+      <div class="labels">
+        <label for="moodRate">How would you describe the general well-beeing in the local community ?</label>
+        <ol style="list-style-type: lower-alpha;">
+          <ul class="radio"><label><input name="radio-buttons" value="1" type="radio"  >Bad</label></ul>
+          <ul class="radio"><label><input name="radio-buttons" value="2"  type="radio"  >Mediocre</label></ul>
+          <ul class="radio"><label><input name="radio-buttons" value="3"  type="radio"  >Good</label></ul>
+        </ol>
+      </div>
+
+                          <!--Drop down-->                             
+      <div class="labels">
+        <label for="most-like">Which upgrades should be made?  </label>
+        <select id="most-like" name="mostLike" class="userdata">
+      <option disabled selected value>Select from below</option>
+      <option value="hospital">Upgrade the hospital</option>
+      <option value="police">More police training</option>
+      <option value="school">Upgrade school cafeteria</option>
+      <option value="firetrucks">Upgrade firetrucks</option>
+      <option value="supermarkets">Create larger supermarkets</option>
+    </select>
+      </div>
+
+  
+      <div class="labels">
+        <label for="preferences">Which services will improve the community? <br>(Check all that apply): </label>
+      <div class="rightTab">
+        <ul id="preferences" style="list-style: none;">
+          <li class="checkbox"><label><input name="powers" value="1" type="checkbox" class="services">Better food delivery</label></li>
+          <li class="checkbox"><input name="powers" value="2" type="checkbox" class="services">Better telecommunication/internet quality</li>
+          <li class="checkbox"><label><input name="powers" value="3" type="checkbox" class="moodRating">More skilled gardeners</label></li>
+          <li class="checkbox"><label><input name="powers" value="4" type="checkbox" class="services">Shorter queues at the bank</label></li> 
+           <li class="checkbox"><label><input name="powers" value="5" type="checkbox" class="services">More parking spots</label></li>
+    </ul>
+      </div>
+    </div>
+
+      <div class="labels">
+        <label for="advice">Any details before submitting your form?</label>
+        <textarea id="advice" class="userdata" name="advice" placeholder="Write the details here..."></textarea>
+      </div>
+
+    <button id="submit" type="submit">Submit</button>
+  
+  </form>
+  
+  </body>
+  </html>
+
